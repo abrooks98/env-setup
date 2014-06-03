@@ -1,3 +1,9 @@
+" Colorscheme "
+"let g:solarized_termcolors=256
+syntax enable
+"set background=light
+colorscheme desert
+
 " Style "
 set smartindent   " -- use smart indenting
 set tabstop=2     " -- <TAB> two spaces
@@ -25,8 +31,8 @@ set smartcase     " -- perform case-sensitive serach if uppercase chars present
 set hls           " -- highlights search terms
 
 " Highlight Trailing Whitespace "
-hi TrailingSpace ctermbg=1      
-au filetype c,cpp,python match TrailingSpace "\s\+\n"
+hi TrailingSpace ctermbg=1
+match TrailingSpace / \+$/
 
 " Swap/Backup Files "
 set nobackup    " -- turn off backup
@@ -41,3 +47,5 @@ map <c-w>     :w<CR>
 map <c-n>     :tabe 
 map <c-Right> :tabn<CR>
 map <c-Left>  :tabp<CR>
+
+
