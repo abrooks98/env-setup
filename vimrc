@@ -1,3 +1,4 @@
+execute pathogen#infect()
 " Colorscheme "
 "let g:solarized_termcolors=256
 syntax enable
