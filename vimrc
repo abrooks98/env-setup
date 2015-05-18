@@ -1,8 +1,7 @@
 execute pathogen#infect()
+
 " Colorscheme "
-"let g:solarized_termcolors=256
 syntax enable
-"set background=light
 colorscheme desert
 
 " Style "
