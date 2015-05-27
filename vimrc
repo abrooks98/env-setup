@@ -41,5 +41,3 @@ set noswapfile  " -- turn off swap files
 map <c-n>     :tabe 
 map <c-Right> :tabn<CR>
 map <c-Left>  :tabp<CR>
-
-
