@@ -1,8 +1,5 @@
 execute pathogen#infect()
-" Colorscheme "
-"let g:solarized_termcolors=256
 syntax enable
-"set background=light
 colorscheme desert
 
 " Style "
@@ -28,7 +25,7 @@ set backspace=indent,eol,start  " -- let backspace delete anything
 " Searching "
 set incsearch     " -- see the first match before actually searching
 set ignorecase    " -- perform case-insensitive searches
-set smartcase     " -- perform case-sensitive serach if uppercase chars present
+set smartcase     " -- perform case-sensitive search if uppercase chars present
 set hls           " -- highlights search terms
 
 " Highlight Trailing Whitespace "
@@ -39,10 +36,6 @@ match TrailingSpace / \+$/
 set nobackup    " -- turn off backup
 set nowb        " -- turn off auto write-back
 set noswapfile  " -- turn off swap files
-
-" Saving/Quitting "
-map <c-x>     :q<CR>
-map <c-w>     :w<CR>
 
 " Tabs "
 map <c-n>     :tabe 
