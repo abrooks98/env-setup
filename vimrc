@@ -10,6 +10,7 @@ set expandtab     " -- converts tabs to spaces
 set showmatch     " -- shows matching parenthesis and brackets
 set title         " -- shows filename in window
 set cursorline    " -- show current line of cursor
+set ruler         " -- show line/col number
 
 " Sounds "
 set noerrorbells
@@ -38,6 +39,6 @@ set nowb        " -- turn off auto write-back
 set noswapfile  " -- turn off swap files
 
 " Tabs "
-map <c-n>     :tabe 
-map <c-Right> :tabn<CR>
-map <c-Left>  :tabp<CR>
+map  <C-n> <Esc>:tabe 
+map  <C-l> <Esc>:tabn<CR>
+map  <C-k> <Esc>:tabp<CR>
