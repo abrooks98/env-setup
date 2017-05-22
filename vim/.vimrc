@@ -22,6 +22,7 @@ set tm=500
 set scrolloff=10  " -- keep 10 lines on both sides of cursor when scrolling
 set nowrap        " -- don't wrap lines
 set backspace=indent,eol,start  " -- let backspace delete anything
+set mouse=a
 
 " Searching "
 set incsearch     " -- see the first match before actually searching
@@ -42,3 +43,9 @@ set noswapfile  " -- turn off swap files
 map  <C-n> <Esc>:tabe 
 map  <C-l> <Esc>:tabn<CR>
 map  <C-k> <Esc>:tabp<CR>
+
+" Clear Whitespace "
+map  <C-w> <Esc>:%s/\s\+$//e<CR>
+
+" CTags "
+set tags=./tags;/

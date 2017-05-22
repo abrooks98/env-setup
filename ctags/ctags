@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+tag_file="`mktemp -t tags`"
+git_dir="`git rev-parse --git-dir`"
+
+ctags --tag-relative -L - -Rf "$tag_file" --exclude=.git
+mv "$tag_file" "$git_dir/tags"
