@@ -1,3 +1,7 @@
+if has("win64") || has("win32") || has ("win16")
+  let &runtimepath.=',$HOME/.vim'
+endif
+
 execute pathogen#infect()
 syntax enable
 colorscheme desert
