@@ -1,16 +1,16 @@
 [color]
-  diff = auto
-  status = auto
-  branch = auto
-  ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
 
 [color "status"]
-  added = green
-  changed = red
-  untracked = magenta
+    added = green
+    changed = red
+    untracked = magenta
 
 [core]
-  abbrev = 8
+    abbrev = 8
 
 [alias]
-  graph = log --graph --decorate --abbrev-commit --pretty=oneline
+    graph = log --graph --decorate --abbrev-commit --pretty=oneline

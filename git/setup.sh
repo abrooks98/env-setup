@@ -4,7 +4,7 @@ SCRIPT=$(readlink -f "$0")
 DIR=$(dirname "$SCRIPT")
 . $DIR/../utils.sh
 
-confirm "~/.gitconfig"
+confirm "$HOME/.gitconfig"
 cp $DIR/.gitconfig ~/.gitconfig
 
 read -p "Please enter your full name: " -r
