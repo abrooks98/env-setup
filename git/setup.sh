@@ -7,6 +7,8 @@ DIR=$(dirname "$SCRIPT")
 confirm "$HOME/.gitconfig"
 cp $DIR/.gitconfig ~/.gitconfig
 
+git config --global core.editor vim
+
 read -p "Please enter your full name: " -r
 git config --global user.name "$REPLY"
 
