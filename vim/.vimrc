@@ -57,3 +57,9 @@ set tags=./tags;/
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" Paste-Overwriting "
+vnoremap <leader>p "_dP
+
+" Grep with colors
+cnoremap grep !grep --color=always -n
