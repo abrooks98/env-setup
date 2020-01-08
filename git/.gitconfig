@@ -4,6 +4,20 @@
     branch = auto
     ui = auto
 
+[color "diff"]
+    meta = yellow bold
+    commit = green bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = "red bold 52"
+    newNormal = "green bold"
+    newHighlight = "green bold 22"
+
 [color "status"]
     added = green
     changed = red
@@ -11,6 +25,34 @@
 
 [core]
     abbrev = 8
+    editor = vim
+    whitespace = blank-at-eol,blank-at-eof,space-before-tab,tab-in-indent
+    pager = diff-so-fancy | less --tabs=4 -RFX
+
+[pull]
+    rebase = true
+
+[push]
+    default = simple
+
+[diff]
+    renames = copies
+    mnemonicprefix = true
+    compactionHeuristic = true
+
+[fetch]
+    prune = true
+
+[pager]
+    log = diff-so-fancy | less --tabs=4 -RFX
+    show = diff-so-fancy | less --tabs=4 -RFX
+    diff = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
-    graph = log --graph --decorate --abbrev-commit --pretty=oneline
+    graph = log --graph --decorate --abbrev-commit --branches --pretty=oneline
+
+[credential]
+    helper = store
+
+[log]
+    decorate = full
