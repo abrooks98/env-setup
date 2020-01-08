@@ -7,4 +7,7 @@ DIR=$(dirname "$SCRIPT")
 confirm "$HOME/.tmux.conf"
 cp $DIR/.tmux.conf ~/.tmux.conf
 
+# Install TPM
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 echo "Finished setting up tmux"
