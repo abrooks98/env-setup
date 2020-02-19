@@ -49,10 +49,14 @@
     diff = diff-so-fancy | less --tabs=4 -RFX
 
 [alias]
-    graph = log --graph --decorate --abbrev-commit --branches --pretty=oneline
+    sgraph = log --graph --decorate --abbrev-commit --branches --pretty=format:'%C(bold green)%h%C(reset) %C(bold blue)%an%C(reset) %C(white)%s%C(reset)%C(auto)%d%C(reset)'
+    graph = log --graph --decorate --abbrev-commit --branches --date=format:'%d %b %Y' --pretty=format:'%C(bold green)%h%C(reset) %C(bold blue)%an : %ad%C(reset) %C(white)%s%C(reset)%C(auto)%d%C(reset)'
 
 [credential]
     helper = store
 
 [log]
     decorate = full
+
+[rerere]
+    enabled = true
