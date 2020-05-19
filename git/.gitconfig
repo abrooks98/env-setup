@@ -2,7 +2,7 @@
     diff = auto
     status = auto
     branch = auto
-    ui = auto
+    ui = always
 
 [color "diff"]
     meta = yellow bold
