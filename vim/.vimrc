@@ -46,7 +46,7 @@ set noswapfile  " -- turn off swap files
 " Tabs "
 map <C-n> <Esc>:tabe 
 map <C-l> <Esc>:tabn<CR>
-map <C-k> <Esc>:tabp<CR>
+map <C-h> <Esc>:tabp<CR>
 
 " Clear Whitespace "
 map <C-w> <Esc>:%s/\s\+$//e<CR>
