@@ -3,7 +3,7 @@
 SCRIPT=$(readlink -f "$0")
 DIR=$(dirname "$SCRIPT")
 
-git config --global init.templatedir '~/git_template'
+git config --global init.templatedir '~/.git_template'
 
 mkdir -p ~/.git_template/hooks
 
