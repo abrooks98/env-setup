@@ -63,3 +63,6 @@ vnoremap <leader>p "_dP
 
 " Grep with colors
 cnoremap grep !grep --color=always -n
+
+" Git commit formatting
+au FileType gitcommit setlocal tw=72
